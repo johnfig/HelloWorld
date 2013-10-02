@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "HelloWorldViewController.h"
 
 @interface HelloWorldTests : XCTestCase
 
@@ -26,9 +27,14 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testChangeGreeting_shouldHaveHelloWhenNoString
 {
-    XCTAssertTrue(YES, @"YES");
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle bundleForClass:[HelloWorldViewController class]]];
+    HelloWorldViewController *helloController = [storyboard instantiateInitialViewController];
+    XCTAssertNotNil(helloController.view, @"");
+    helloController.textField.text = @"";
+    [helloController changeGreeting:nil];
+    XCTAssertEqualObjects(helloController.label.text, @"Hello, World!", @"Did not match expected value");
 }
 
 @end

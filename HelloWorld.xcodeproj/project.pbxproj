@@ -21,6 +21,7 @@
 		5C8D8A2617FB7F1B00D8948A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8D8A0817FB7F1B00D8948A /* UIKit.framework */; };
 		5C8D8A2E17FB7F1B00D8948A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C8D8A2C17FB7F1B00D8948A /* InfoPlist.strings */; };
 		5C8D8A3017FB7F1B00D8948A /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D8A2F17FB7F1B00D8948A /* HelloWorldTests.m */; };
+		5C8D8A3A17FCA76100D8948A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C8D8A1617FB7F1B00D8948A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -239,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C8D8A3A17FCA76100D8948A /* Main.storyboard in Resources */,
 				5C8D8A2E17FB7F1B00D8948A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +463,7 @@
 				5C8D8A3517FB7F1B00D8948A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C8D8A3617FB7F1B00D8948A /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +472,7 @@
 				5C8D8A3817FB7F1B00D8948A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
