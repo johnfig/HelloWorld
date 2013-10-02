@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HelloWorldViewController : UIViewController
+@property (copy, nonatomic) NSStream *userName;
 
 @end
